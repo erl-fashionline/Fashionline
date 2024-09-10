@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashionline Training WEB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginPage">
+        <div class="login-container">
+            <img src="images/FASHIONLINE LOGO_BLACK-01.png" alt="Fashionline Logo" id="loginLogo">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="loginButton">Login</button>
+        </div>
+    </div>
+
+    <div id="app" style="display: none;">
+        <header>
+            <img src="images/FASHIONLINE LOGO_BLACK-01.png" alt="Fashionline Logo" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="#" data-page="dashboard">Dashboard</a></li>
+                    <li><a href="#" data-page="library">Library</a></li>
+                    <li><a href="#" data-page="training">Training</a></li>
+                    <li><a href="#" data-page="vadata">VA Data</a></li>
+                    <li id="adminPanelLink" style="display: none;"><a href="#" data-page="adminPanel">Admin Panel</a></li>
+                </ul>
+            </nav>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <div class="container">
+            <aside id="sidebar" style="display: none;">
+                <div class="category">
+                    <h3>INTERNAL</h3>
+                    <ul id="internalList" class="hidden"></ul>
+                </div>
+                <div class="category">
+                    <h3>EXTERNAL</h3>
+                    <ul id="externalList" class="hidden"></ul>
+                </div>
+                <div class="category">
+                    <h3>SHUTTERS</h3>
+                    <ul id="shuttersList" class="hidden"></ul>
+                </div>
+                <div class="category">
+                    <h3>SECURITY</h3>
+                    <ul id="securityList" class="hidden"></ul>
+                </div>
+                <div class="category">
+                    <h3>MEMBERS</h3>
+                    <ul id="membersList" class="hidden"></ul>
+                </div>
+            </aside>
+
+            <main id="mainContent">
+                <!-- Content will be dynamically loaded here -->
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
